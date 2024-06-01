@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.reamillo.its181fa11.ReceiptController">
+   <children>
+      <Text layoutX="136.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receipt" textAlignment="CENTER" wrappingWidth="101.83984375">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font></Text>
+      <Text layoutX="35.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership fee (15%):">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Security Deductions (7.85%):" wrappingWidth="206.0546875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Federal Tax Deductions:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gross Pay:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total deductions:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net pay:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="81.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="58.048828125" />
+      <Label fx:id="roleText" layoutX="79.0" layoutY="98.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="grossText" layoutX="108.0" layoutY="131.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="feeText" layoutX="178.0" layoutY="169.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="ssdText" layoutX="238.0" layoutY="206.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="taxText" layoutX="179.0" layoutY="248.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="totText" layoutX="139.0" layoutY="283.0" prefHeight="18.0" prefWidth="120.0" />
+      <Label fx:id="netText" layoutX="93.0" layoutY="417.0" prefHeight="18.0" prefWidth="120.0" />
+   </children>
+</AnchorPane>
