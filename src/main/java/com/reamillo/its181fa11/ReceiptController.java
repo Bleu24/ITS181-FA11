@@ -31,17 +31,19 @@ public class ReceiptController implements Initializable {
     public Label totText;
     @FXML
     public Label netText;
+    @FXML
+    private Label nameText;
 
     InputSingleton data = InputSingleton.getInstance();
     @FXML
     private Button returnButton;
-
-    @FXML
     private Stage stage;
     private Scene scene;
 
+
     @Deprecated
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        nameText.setText(data.getUserName());
         roleText.setText(data.getUserRole());
         grossText.setText(String.valueOf(data.getGross()));
         feeText.setText(String.valueOf(data.getFee()));
@@ -56,7 +58,7 @@ public class ReceiptController implements Initializable {
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load((getClass().getResource("hello-view.fxml")));
         scene = new Scene(root);
-        stage.setTitle("Receipt");
+        stage.setTitle("ABC Job Sourcing Salary Calculator");
         stage.setScene(scene);
         stage.show();
     }
