@@ -22,6 +22,8 @@ public class HelloController implements Initializable {
     @FXML
     private TextField hoursField;
     @FXML
+    private TextField nameField;
+    @FXML
     private TextField dependentsField;
     @FXML
     public ChoiceBox<String> roleField = new ChoiceBox<>();
@@ -31,11 +33,15 @@ public class HelloController implements Initializable {
 
     //Initializes the singleton
     InputSingleton data = InputSingleton.getInstance();
+    @FXML
+    private Button calculateButton;
 
     @FXML
     public void onCalculateClick(ActionEvent actionEvent) throws IOException {
 
         //sets values for the singleton to pass it to ReceiptController
+
+        data.setName(nameField.getText());
         data.setDependent(Integer.parseInt(dependentsField.getText()));
         data.setRole(roleField.getValue());
         data.setGross(Integer.parseInt(hoursField.getText()));
