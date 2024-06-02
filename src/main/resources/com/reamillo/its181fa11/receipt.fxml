@@ -53,5 +53,6 @@
       <Label fx:id="taxText" layoutX="179.0" layoutY="248.0" prefHeight="18.0" prefWidth="120.0" />
       <Label fx:id="totText" layoutX="139.0" layoutY="283.0" prefHeight="18.0" prefWidth="120.0" />
       <Label fx:id="netText" layoutX="93.0" layoutY="417.0" prefHeight="18.0" prefWidth="120.0" />
+      <Button fx:id="returnButton" layoutX="282.0" layoutY="414.0" mnemonicParsing="false" onAction="#onReturnClicked" text="Return" />
    </children>
 </AnchorPane>
