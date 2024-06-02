@@ -2,42 +2,43 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="510.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.reamillo.its181fa11.ReceiptController">
+<AnchorPane prefHeight="524.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.reamillo.its181fa11.ReceiptController">
    <children>
-      <Text layoutX="136.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receipt" textAlignment="CENTER" wrappingWidth="101.83984375">
+      <Text layoutX="334.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receipt" textAlignment="CENTER" wrappingWidth="97.79296875">
          <font>
-            <Font name="Impact" size="24.0" />
+            <Font name="JetBrains Mono ExtraBold" size="15.0" />
          </font></Text>
-      <Text layoutX="35.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership fee (15%):">
+      <Text layoutX="32.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership fee (15%):">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="33.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Security Deductions (7.85%):" wrappingWidth="206.0546875">
+      <Text layoutX="31.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social Security Deductions (7.85%):" wrappingWidth="265.8398284912108">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="33.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Federal Tax Deductions:">
+      <Text layoutX="32.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Federal Tax Deductions:">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="35.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gross Pay:">
+      <Text layoutX="31.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gross Pay:">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="35.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:">
+      <Text layoutX="33.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role:">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="33.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total deductions:">
+      <Text layoutX="31.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total deductions:">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="JetBrains Mono Bold" size="12.0" />
          </font>
       </Text>
       <Text layoutX="33.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net pay:">
@@ -46,13 +47,30 @@
          </font>
       </Text>
       <Text layoutX="81.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="58.048828125" />
-      <Label fx:id="roleText" layoutX="79.0" layoutY="98.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="grossText" layoutX="108.0" layoutY="131.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="feeText" layoutX="178.0" layoutY="169.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="ssdText" layoutX="238.0" layoutY="206.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="taxText" layoutX="179.0" layoutY="248.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="totText" layoutX="139.0" layoutY="283.0" prefHeight="18.0" prefWidth="120.0" />
-      <Label fx:id="netText" layoutX="93.0" layoutY="417.0" prefHeight="18.0" prefWidth="120.0" />
-      <Button fx:id="returnButton" layoutX="282.0" layoutY="414.0" mnemonicParsing="false" onAction="#onReturnClicked" text="Return" />
+      <Label fx:id="roleText" layoutX="346.0" layoutY="173.0" prefHeight="18.0" prefWidth="98.0" textAlignment="RIGHT" />
+      <Label fx:id="grossText" layoutX="346.0" layoutY="199.0" prefHeight="18.0" prefWidth="98.0" />
+      <Label fx:id="feeText" layoutX="346.0" layoutY="225.0" prefHeight="18.0" prefWidth="98.0" textAlignment="RIGHT" />
+      <Label fx:id="ssdText" layoutX="345.0" layoutY="254.0" prefHeight="18.0" prefWidth="98.0" textAlignment="RIGHT" />
+      <Label fx:id="taxText" layoutX="345.0" layoutY="283.0" prefHeight="18.0" prefWidth="98.0" textAlignment="RIGHT" />
+      <Label fx:id="totText" layoutX="346.0" layoutY="311.0" prefHeight="18.0" prefWidth="98.0" textAlignment="RIGHT" />
+      <Label fx:id="netText" layoutX="346.0" layoutY="417.0" prefHeight="18.0" prefWidth="98.0" />
+      <Button fx:id="returnButton" layoutX="376.0" layoutY="476.0" mnemonicParsing="false" onAction="#onReturnClicked" text="Return">
+         <font>
+            <Font name="JetBrains Mono Light" size="12.0" />
+         </font></Button>
+      <Line endX="300.20001220703125" layoutX="127.0" layoutY="67.0" startX="-100.0" />
+      <Text layoutX="-7.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABC Job Sourcing" textAlignment="CENTER" wrappingWidth="265.83982849121094">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="JetBrains Mono Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="nameText" layoutX="346.0" layoutY="148.0" prefHeight="18.0" prefWidth="98.0" />
+      <Line endX="300.20001220703125" layoutX="127.0" layoutY="401.0" startX="-100.0" />
+      <Line endX="300.20001220703125" layoutX="127.0" layoutY="454.0" startX="-100.0" />
    </children>
 </AnchorPane>
